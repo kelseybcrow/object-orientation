@@ -39,7 +39,7 @@ console.log(dog.name);
 
 //Code here
 
-console.log(dog[color]);
+console.log(dog["color"]);
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
@@ -106,7 +106,7 @@ let { color, make, model, year } = carDetails;
 
 function greeting(obj) {
   //Code Here
-
+  let { firstName, lastName, title } = obj;
   // Do not edit the code below.
   return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
@@ -124,6 +124,13 @@ function greeting(obj) {
 
 //Code Here
 
+const totalPopulation = (obj) => {
+  const { utah, california, texas, arizona } = obj;
+  let sum = 0;
+  sum += utah + california + texas + arizona;
+  return sum;
+};
+
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
 /*
@@ -135,6 +142,13 @@ function greeting(obj) {
 */
 
 //Code Here
+
+const ingredients = (obj) => {
+  const { carb, fat, protein } = obj;
+  let arr = [];
+  arr.push(carb, fat, protein);
+  return arr;
+};
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -156,12 +170,17 @@ var user = {
 
 //Code Here
 
+user.name = "Bryan G. Smith";
+user.email = "bryan.smith@devmounta.in";
+
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
 */
 
 //Code Here
+
+delete user.age;
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
