@@ -252,6 +252,26 @@ wizard1.castSpell();
 
 //Code Here
 
+class Phone {
+  constructor(brand, model, storage, color, price) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
+
+  sell() {
+    this.sold = true;
+    console.log(this.brand, this.model, "has been sold.");
+  }
+
+  changePrice(newPrice) {
+    this.price = newPrice;
+  }
+}
+
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -263,6 +283,16 @@ wizard1.castSpell();
 */
 
 //Code Here
+
+let phone1 = new Phone("apple", "eleven", 64, "midnight green, 600");
+let phone2 = new Phone("google", "pixel", 128, "black", 500);
+let phone3 = new Phone("apple", "thirteen", 300, "silver", 1000);
+
+phone2.changePrice(newPrice){
+  this.price = newPrice;
+};
+
+console.log(phone2)
 
 /* 
   Call the changePrice function on one of your phones, 
