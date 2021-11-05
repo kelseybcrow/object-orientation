@@ -191,6 +191,17 @@ delete user.age;
 
 //Code here
 
+class Cat {
+  constructor(name, age, color) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+  }
+}
+
+let cat1 = new Cat("Sally", 3, "orange");
+console.log(cat1.name);
+
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
   Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
